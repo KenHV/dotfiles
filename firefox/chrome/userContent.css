@@ -1,0 +1,19 @@
+@-moz-document url-prefix("about:reader") {
+  body.sans-serif {
+    font-family: Inter, sans-serif !important;
+  }
+
+  pre code {
+    font-family: "FiraMono Nerd Font", monospace;
+    font-size: 0.9em;
+  }
+
+  .reader-toolbar,
+  .reader-toolbar .button:not(:hover) {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .reader-toolbar:not(:hover) > *:not([open]) {
+    visibility: hidden;
+  }
+}

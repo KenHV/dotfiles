@@ -15,6 +15,12 @@ alias vpnoff="sudo wg-quick down zeus"
 alias vpnfon="sudo wg-quick up zeus-full"
 alias vpnfoff="sudo wg-quick down zeus-full"
 
+alias dc="docker compose"
+alias dcu="docker compose up -d"
+alias dcd="docker compose down"
+alias dcr="docker compose restart"
+alias dcl="docker compose logs -f"
+
 alias dark="gsettings set org.gnome.desktop.interface color-scheme prefer-dark"
 alias light="gsettings set org.gnome.desktop.interface color-scheme prefer-light"
 

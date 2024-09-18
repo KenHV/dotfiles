@@ -1,0 +1,22 @@
+" https://github.com/tpope/vim-sensible
+runtime! plugin/sensible.vim
+
+" Tab -> 4 spaces
+set tabstop=4 softtabstop=4 shiftwidth=4
+set expandtab
+
+" Auto indenting
+set autoindent
+
+" Persistent undo
+set undodir=~/.vim/undo-dir
+set undofile
+
+" Disable auto commenting
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+
+" Visual indicator at 80 chars for git commit messages
+autocmd FileType gitcommit setlocal colorcolumn=80
+
+" Keep ~ clean
+set viminfofile=~/.vim/.viminfo

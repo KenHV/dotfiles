@@ -6,7 +6,9 @@ set tabstop=4 softtabstop=4 shiftwidth=4
 set expandtab
 
 " Auto indenting
-set autoindent
+"filetype plugin indent on
+"set autoindent
+"set paste
 
 " Persistent undo
 set undodir=~/.vim/undo-dir
